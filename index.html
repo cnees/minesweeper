@@ -2,6 +2,7 @@
   body {
     height: 350px;
     overflow: hidden;
+    background: #333;
   }
   i {
     display: inline-block;
@@ -14,8 +15,12 @@
     display: block;
     width: 12px;
     height: 12px;
-    background: #ccc;
-    border: 3px outset #ccc;
+    background: #C0C0C0;
+    border: 3px solid #C0C0C0;
+    border-top-color:#eee;
+    border-left-color:#eee;
+    border-bottom-color:#808080;
+    border-right-color:#808080;
   }
   i a:active, i b a {
     width: 16px;
@@ -28,7 +33,7 @@
     text-align: center;
     font-style: normal;
     font-size: 14px;
-    line-height:18px;
+    line-height:14px;
   }
   .n_0 {color: #C0C0C0;}
   .n_1 {color: #0000FF;}
@@ -40,14 +45,30 @@
   .n_7 {color: #000000;}
   .n_8 {color: #808080;}
   .n_x {
-    border:3px inset #c33;
-    color:#c33;
-    background:#c33;
+    color:#FC0D1B;
+    border: 1px #fc0d1b inset;
+    background:#FC0D1B;
     font-size: 8px;
   }
+  #wrapper {
+    width:309px;
+    padding:3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background: #ccc;
+    border:3px #ccc outset;
+    border-top-color:#eee;
+    border-left-color:#eee;
+  }
+  #grid {
+    display: inline-block;
+    border:2px #ccc inset;
+  }
+
 </style>
-<div style="width: 306px; margin-left: auto; margin-right: auto; margin-top: 10px;">
-  <table cellpadding="0" cellspacing="0" style="display: inline-block;">
+<div id="wrapper">
+  <table cellpadding="0" cellspacing="0" id="grid">
     <tr>
       <td><i><a href="#b0_0"></a><b><a id="b0_0" class="n_1">1</a></b></i></td>
       <td><i><a href="#b0_1"></a><b><a id="b0_1" class="n_1">1</a></b></i></td>
